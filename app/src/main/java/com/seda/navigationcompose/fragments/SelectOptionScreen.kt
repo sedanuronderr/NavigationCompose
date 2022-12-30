@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 import com.seda.navigationcompose.components.FormattedPriceLabel
 
 
+
 @SuppressLint("SuspiciousIndentation")
 @Composable
 fun SelectOptionScreen(
@@ -50,7 +51,7 @@ Column(modifier = modifier.padding(16.dp)) {
     Divider(thickness = 2.dp, modifier = modifier.padding(bottom = 16.dp))
            FormattedPriceLabel(
                subtotal = subtotal,modifier= Modifier
-                   .align(Alignment.CenterHorizontally)
+                   .align(Alignment.End)
                    .padding(top = 16.dp, bottom = 16.dp)
            )
 

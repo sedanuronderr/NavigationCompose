@@ -8,5 +8,5 @@ import com.seda.navigationcompose.R
 
 @Composable
 fun FormattedPriceLabel(subtotal:String,modifier: Modifier=Modifier){
-    Text(text = stringResource(R.string.subtotal_price,subtotal),modifier=Modifier)
+    Text(text = stringResource(R.string.subtotal_price,subtotal),modifier=modifier)
 }
