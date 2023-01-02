@@ -1,5 +1,6 @@
 package com.seda.navigationcompose
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.annotation.StringRes
@@ -27,6 +28,7 @@ enum class CupcakeScreen(@StringRes val title: Int) {
     Pickup(title = R.string.choose_pickup_date),
     Summary(title = R.string.order_summary)
 }
+@SuppressLint("SuspiciousIndentation")
 @Composable
 fun CupcakeApp(  modifier: Modifier = Modifier,viewModel: OrderViewModel = viewModel(), navController: NavHostController = rememberNavController()){
     Scaffold { innerPadding->
